@@ -30,23 +30,21 @@ In the project directory,open terminal and run `output file` by pasting this com
 In the project directory,open terminal and run ``` irb ``` command.
 After that copy and paste the following commands:
 
-``` 
-# check if classes created successfully
+```ruby 
+# add Person, Student and Teacher classes
 
 require('./person')
 require('./student')
 require('./teacher')
-
 test = Person.new(17)
 test.instance_eval('of_age?', __FILE__, __LINE__)
 test.can_use_services?
-student = Student.new(('class1'))
+student = Student.new('class1', 14)
 student.play_hooky
-teacher = Teacher.new(('medecine'))
+teacher = Teacher.new('medecine', 22)
 teacher.can_use_services?
 
 ```
-
 
 ## Authors
 :bust_in_silhouette: **RWUBAKWANAYO**

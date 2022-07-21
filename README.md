@@ -22,8 +22,8 @@
 
 In the project directory,open terminal and run `output file` by pasting this command:
 
-```javascript
-> output.rb
+```ruby
+> ruby output.rb
 ```
 ### Second Approach:
 
@@ -97,6 +97,12 @@ person_1.rentals.map{ |rental| rental.date}
 person_2.rentals.count
 person_2.rentals.map{ |rental| rental.date}
 book.rentals.map{ |rental| "#{rental.date} #{rental.person.name} #{rental.book.title}"}
+```
+
+```ruby
+# Add basic UI
+
+> ruby main.rb
 ```
 
 ## Authors

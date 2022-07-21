@@ -47,23 +47,23 @@ puts "doe belongs to #{doe.classroom.label}"
 puts "Students in #{classroom.label}:"
 puts classroom.students.map(&:name)
 
-person_1 = Person.new(22, 'maximilianus')
-person_2 = Person.new(18, 'Bob')
-book = Book.new("Relativity Theory", "Albert Einstein")
-book.add_rental("2017-12-22", person_1)
-book.add_rental("2017-12-25", person_1)
-book.add_rental("2017-08-23", person_2)
-puts ("Person1 rented a book")
-puts "#{person_1.rentals.count} times"
-puts ("At:")
-puts person_1.rentals.map{ |rental| rental.date}
-puts ("Person2 rented a book")
-puts "#{person_2.rentals.count} times"
-puts ("At:")
-puts person_2.rentals.map{ |rental| rental.date}
-puts("History of book rental")
-puts book.rentals.map{ |rental| "Date of rent: #{rental.date} \n
+person1 = Person.new(22, 'maximilianus')
+person2 = Person.new(18, 'Bob')
+book = Book.new('Relativity Theory', 'Albert Einstein')
+book.add_rental('2017-12-22', person1)
+book.add_rental('2017-12-25', person1)
+book.add_rental('2017-08-23', person2)
+puts('Person1 rented a book')
+puts "#{person1.rentals.count} times"
+puts('At:')
+puts person1.rentals.map(&:date)
+puts('Person2 rented a book')
+puts "#{person2.rentals.count} times"
+puts('At:')
+puts person2.rentals.map(&:date)
+puts('History of book rental')
+puts(book.rentals.map do |rental|
+  "\n Date of rent: #{rental.date} \n
  Name of rental: #{rental.person.name}\n
- Book's name :#{rental.book.title}
- "}
- 
+ Book's name :#{rental.book.title}"
+end)

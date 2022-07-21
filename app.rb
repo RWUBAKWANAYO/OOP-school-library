@@ -41,3 +41,12 @@ def create_person(people)
   puts 'Person created successfully.'
 end
 
+def create_book(books)
+  print 'Title: '
+  title = gets.chomp
+  print 'Author: '
+  author = gets.chomp
+  books.push(Book.new(title, author))
+  puts 'Book created successfully.'
+end
+

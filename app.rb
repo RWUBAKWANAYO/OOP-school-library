@@ -11,3 +11,11 @@ def list_all_books(books)
   end
 end
 
+def list_all_people(people)
+  if people.empty?
+    puts 'There is no person!'
+  else
+    people.each { |person| puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
+  end
+end
+

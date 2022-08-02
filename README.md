@@ -110,7 +110,12 @@ book.rentals.map{ |rental| "#{rental.date} #{rental.person.name} #{rental.book.t
 - GitHub: [@githubrwubakwanayo](https://github.com/RWUBAKWANAYO)
 - LinkedIn: [Rwubakwanayo](https://www.linkedin.com/in/rwubakwanayo-olivier)
 
+👤 Onyeagoziri Precious Akams
 
+* GitHub: [@kamzzy](https://github.com/kamzzy)
+* Twitter:[@precious_akams](https://twitter.com/precious_akams)
+* LinkedIn:[Onyeagoziri Akams](https://www.linkedin.com/in/onyeagoziri-akams/)
+* AngelList:[Onyeagoziri Akams](https://angel.co/u/onyeagoziri-akams)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

@@ -16,7 +16,7 @@ class Create
       @people.push(Student.new(nil, age, name, parent_permission: student_permission))
     when 2
       specialization = person_specialization
-      people.push(Teacher.new(specialization, age, name))
+      @people.push(Teacher.new(specialization, age, name))
     end
     puts 'Person created successfully.'
   end

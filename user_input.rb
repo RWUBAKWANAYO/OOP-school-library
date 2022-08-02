@@ -13,11 +13,12 @@ def person_permission
   provided_permission = gets.chomp.capitalize
   student_permission = true if provided_permission == 'Y'
   student_permission = false if provided_permission == 'N'
+  student_permission
 end
 
 def person_specialization
   print 'Specialization: '
-  specialization = gets.chomp
+  gets.chomp
 end
 
 def book_info
@@ -30,7 +31,7 @@ end
 
 def rentals_book(books)
   books.map.with_index { |book, index| puts "#{index}) Title: '#{book.title}', Author: #{book.author}" }
-  selected_book = gets.chomp.to_i
+  gets.chomp.to_i
 end
 
 def rentals_person(people)
@@ -38,14 +39,14 @@ def rentals_person(people)
   people.map.with_index do |person, index|
     puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
   end
-  selected_person = gets.chomp.to_i
+  gets.chomp.to_i
 end
 
 def rentals_date
-  provided_date = gets.chomp
+  gets.chomp
 end
 
 def rentals_person_id
   print 'ID of person: '
-  person_id = gets.chomp.to_i
+  gets.chomp.to_i
 end

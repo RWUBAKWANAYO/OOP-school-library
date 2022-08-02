@@ -6,7 +6,6 @@ require('./list')
 require('./create')
 
 class App
-
   def initialize
     @people = []
     @books = []

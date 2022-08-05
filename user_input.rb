@@ -30,14 +30,13 @@ def book_info
 end
 
 def rentals_book(books)
-  books.map.with_index { |book, index| puts "#{index}) Title: '#{book.title}', Author: #{book.author}" }
+  books.map.with_index { |book, index| puts "#{index}) Title: '#{book['title']}', Author: #{book['author']}" }
   gets.chomp.to_i
 end
 
 def rentals_person(people)
-  puts 'Select a person from the following list by number (Not ID): '
   people.map.with_index do |person, index|
-    puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+    puts "#{index}) [#{person['role']}] Name: #{person['name']}, ID: #{person['id']}, Age: #{person['age']}"
   end
   gets.chomp.to_i
 end

@@ -9,6 +9,7 @@ class App
     @list = List.new
     @create = Create.new
   end
+
   def options
     loop do
       display_list
